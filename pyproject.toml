@@ -1,0 +1,20 @@
+[project]
+name = "update-ec2-security-group"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boto3>=1.40.70",
+]
+
+[project.scripts]
+update-ec2-security-group = "update_ec2_security_group.main:main"
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+dev = [
+    "boto3-stubs>=1.40.70",
+]
