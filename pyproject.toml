@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "boto3>=1.40.70",
+    "boto3>=1.42",
 ]
 
 [project.scripts]
@@ -16,5 +16,5 @@ package = true
 
 [dependency-groups]
 dev = [
-    "boto3-stubs>=1.40.70",
+    "boto3-stubs>=1.42",
 ]
