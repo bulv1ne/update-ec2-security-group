@@ -11,6 +11,14 @@ dependencies = [
 [project.scripts]
 update-ec2-security-group = "update_ec2_security_group.main:main"
 
+[build-system]
+requires = ["uv_build>=0.9.17,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "update_ec2_security_group"
+module-root = ""
+
 [tool.uv]
 package = true
 
