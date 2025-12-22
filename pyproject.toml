@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "boto3>=1.42",
+    "boto3-stubs[ec2]~=1.42.14",
+    "inquirer>=3.4.1",
+    "requests>=2.32.5",
 ]
 
 [project.scripts]
@@ -24,5 +27,4 @@ package = true
 
 [dependency-groups]
 dev = [
-    "boto3-stubs>=1.42",
 ]
