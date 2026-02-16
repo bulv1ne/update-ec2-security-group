@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "boto3>=1.42",
-    "boto3-stubs[ec2]~=1.42.14",
+    "boto3-stubs[ec2]>=1.42",
     "inquirer>=3.4.1",
     "requests>=2.32.5",
 ]
@@ -15,7 +15,7 @@ dependencies = [
 update-ec2-security-group = "update_ec2_security_group.main:main"
 
 [build-system]
-requires = ["uv_build>=0.9.17,<0.10.0"]
+requires = ["uv_build>=0.10,<0.11"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
