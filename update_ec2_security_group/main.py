@@ -49,7 +49,7 @@ def main():
         ],
     ):
         try:
-            input("Press any key to continue...")
+            input("Press ENTER to finish up the EC2 Security Group permissions")
         except KeyboardInterrupt:
             pass
 
